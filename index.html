@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planto</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Keyboard&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="position-relative">
+    <!-- start extra links -->
+    <div class="position-absolute top-200 end-20 z-3">
+      <ul class="list-unstyled">
+        <li>
+          <a href="#"
+            ><i
+              class="fa-brands fa-square-facebook fs-1 mb-3 text-light-gold hover:text-light-green"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-brands fa-square-twitter fs-1 mb-3 text-light-gold hover:text-light-green"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-brands fa-square-whatsapp fs-1 mb-3 text-light-gold hover:text-light-green"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-brands fa-square-instagram fs-1 mb-3 text-light-gold hover:text-light-green"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-brands fa-linkedin fs-1 text-light-gold hover:text-light-green"
+            ></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- end extra links -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg position-fixed fixed-top">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand rounded d-flex align-items-center gap-lg-3 gap-2 text-white glass-card bg-white bg-opacity-10 py-2 ps-2 pe-3 pe-lg-5 me-3 me-lg-5 position-relative fs-2 before:content after:content before:position-absolute after:position-absolute before:w-7 before:h-10 after:w-7 after:h-10 before:border-gray after:border-gray before:-top-1 before:-left-1 before:border-right-none before:border-bottom-none after:-bottom-1 after:-right-1 after:border-top-none after:borde-left-none before:rounded-6 after:rounded-6"
+          href="#"
+        >
+          <img src="images/favicon.ico" alt="logo" />
+          Planto.
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-lg-1 me-auto my-4 my-lg-0 ms-xl-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white fs-5 rounded px-2"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 rounded px-2" href="#">More</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white fs-5 rounded px-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Plants Type
+              </a>
+              <ul class="dropdown-menu custom-menu bg-black bg-opacity-10">
+                <li>
+                  <a class="dropdown-item text-white fs-5" href="#"
+                    >Flowering plants</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white fs-5" href="#">Monocots</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-white fs-5" href="#">Trees</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 rounded px-2" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex me-lg-2 mb-lg-0 mb-2" role="search">
+            <input
+              class="form-control me-2 border border-succes"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-3 text-white fs-6"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <button
+            type="button"
+            class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-4 py-2 text-white fs-6"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content custom-menu bg-white bg-opacity-10">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-2 text-white" id="exampleModalLabel">
+              log in
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div>
+                <label for="email" class="col-form-label text-white fs-5"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+              <div>
+                <label
+                  for="inputPassword6"
+                  class="col-form-label text-white fs-5"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="inputPassword6"
+                  class="form-control"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+              <div>
+                <input type="checkbox" id="remmber" />
+                <label for="remmber" class="col-form-label text-white fs-5"
+                  >Remember Me</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-4 py-2 text-white fs-5 w-100"
+              data-bs-dismiss="modal"
+            >
+              log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->
+    <!-- carousel start -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/img.jpg"
+            class="d-block w-100 h-lg-screen img-fluid"
+            alt="image"
+          />
+          <div
+            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4"
+          >
+            <h5 class="fs-3 font-Playfair fw-bold">Haworthia</h5>
+            <p class="fs-5 fw-semibold text-capitalize">
+              Haworthia is a large genus of small succulent plants endemic to
+              Southern Africa.
+            </p>
+            <button
+              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+            >
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img1.jpg"
+            class="d-block w-100 h-lg-screen"
+            alt="image"
+          />
+          <div
+            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4"
+          >
+            <h5 class="fs-3 font-Playfair fw-bold">Echeveria elegans</h5>
+            <p class="fs-5 fw-semibold text-capitalize">
+              is a species of flowering plant in the family Crassulaceae, native
+              to semi-desert habitats in Mexico.
+            </p>
+            <button
+              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+            >
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img3.jpg"
+            class="d-block w-100 h-lg-screen"
+            alt="img"
+          />
+          <div
+            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4 rounded"
+          >
+            <h5 class="fs-3 font-Playfair fw-bold">Sansevieria</h5>
+            <p class="fs-5 fw-semibold text-capitalize">
+              Sansevieria is a historically recognized genus of flowering
+              plants, native to Africa, notably Madagascar, and southern Asia.
+            </p>
+            <button
+              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+            >
+              Call Us
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img2.jpg"
+            class="d-block w-100 h-lg-screen"
+            alt="img"
+          />
+          <div
+            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-white mb-5 p-4 rounded"
+          >
+            <h5 class="fs-3 font-Playfair fw-bold">Echeveria</h5>
+            <p class="fs-5 text-capitalize fw-semibold">
+              Echeveria is a large genus of flowering plants in the family
+              Crassulaceae, native to semi-desert areas of Central America,
+              Mexico and northwestern South America.
+            </p>
+            <button
+              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+            >
+              Call Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-light-green p-lg-4 rounded"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-light-green p-lg-4 rounded"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

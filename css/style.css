@@ -1,0 +1,136 @@
+body {
+  background-color: #1a2217;
+  font-family: "Playfair Display", serif;
+}
+.navbar {
+  background-color: #1a2217;
+}
+.navbar-brand {
+  font-family: "Clicker Script", cursive;
+}
+.glass-card {
+  backdrop-filter: blur(15px);
+  box-shadow: 3px 5px 5px rgb(174 205 164 / 30%);
+  text-shadow: 2px 2px 4px rgb(255 255 255);
+}
+.navbar-toggler {
+  background-color: #a1ae93;
+}
+.nav-link:focus {
+  border: 1px solid #a1ae93;
+  background-color: #ffffff1f;
+  backdrop-filter: blur(15px);
+}
+.custom-menu {
+  backdrop-filter: blur(15px);
+  box-shadow: 3px 5px 5px rgb(174 205 164 / 30%);
+}
+.custom-menu a:hover {
+  background-color: #a79118;
+}
+.custom-button:hover {
+  background-color: #a79118 !important;
+}
+@media (min-width: 991px) {
+  .h-lg-screen {
+    height: 100vh;
+  }
+}
+
+/* custom classes */
+/* ********< before and after >************* */
+/* content */
+.before\:content::before,
+.after\:content::after {
+  content: "";
+}
+/* ================== */
+/* position */
+.before\:position-absolute::before,
+.after\:position-absolute::after {
+  position: absolute;
+}
+/* ================== */
+/* width */
+.before\:w-7::before,
+.after\:w-7::after {
+  width: 70%;
+}
+.before\:w-7::before,
+.after\:w-7::after {
+  width: 70%;
+}
+
+/* ==================== */
+/* height */
+.before\:h-10::before,
+.after\:h-10::after {
+  height: 100%;
+}
+/* ===================== */
+/* border */
+.before\:border-gray::before,
+.after\:border-gray::after {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.before\:border-right-none::before {
+  border-right: none;
+}
+.before\:border-bottom-none::before {
+  border-bottom: none;
+}
+.after\:border-top-none::after {
+  border-top: none;
+}
+.after\:borde-left-none::after {
+  border-left: none;
+}
+/* ============================= */
+/* positions */
+.before\:-top-1::before {
+  top: -1px;
+}
+.before\:-left-1::before {
+  left: -1px;
+}
+.after\:-right-1::after {
+  right: -1px;
+}
+.after\:-bottom-1::after {
+  bottom: -1px;
+}
+.top-200 {
+  top: 200px;
+}
+.end-20 {
+  right: 20px;
+}
+/* ================================= */
+/* rounded */
+.before\:rounded-6::before {
+  border-top-left-radius: 6px;
+}
+.after\:rounded-6::after {
+  border-bottom-right-radius: 6px;
+}
+/* ********< hover >************* */
+.hover\:text-light-green:hover {
+  color: #5c694f;
+}
+/* ********< colors >************* */
+/* background */
+.bg-light-green {
+  background-color: #a1ae93;
+}
+.bg-darck-green {
+  background-color: #1a2217;
+}
+
+/* text */
+.text-light-gold {
+  color: #a79118;
+}
+/* ********< fonts >************* */
+.font-Playfair {
+  font-family: "Playfair Display SC", serif;
+}
