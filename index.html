@@ -14,15 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Keyboard&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Story+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Keyboard&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Story+Script&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="position-relative">
+  <body class="position-relative bg-darck-green font-Playfair2">
     <!-- start extra links -->
-    <div class="position-absolute top-200 end-20 z-3">
+    <section class="position-fixed top-200 end-20 z-3">
       <ul class="list-unstyled">
         <li>
           <a href="#"
@@ -60,20 +60,22 @@
           ></a>
         </li>
       </ul>
-    </div>
+    </section>
     <!-- end extra links -->
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg position-fixed fixed-top">
-      <div class="container-fluid">
+    <nav
+      class="navbar navbar-expand-lg bg-darck-green position-fixed fixed-top"
+    >
+      <div class="container">
         <a
-          class="navbar-brand rounded d-flex align-items-center gap-lg-3 gap-2 text-white glass-card bg-white bg-opacity-10 py-2 ps-2 pe-3 pe-lg-5 me-3 me-lg-5 position-relative fs-2 before:content after:content before:position-absolute after:position-absolute before:w-7 before:h-10 after:w-7 after:h-10 before:border-gray after:border-gray before:-top-1 before:-left-1 before:border-right-none before:border-bottom-none after:-bottom-1 after:-right-1 after:border-top-none after:borde-left-none before:rounded-6 after:rounded-6"
+          class="navbar-brand font-Clicker sm-light-box-shadow sm-light-text-shadow rounded d-flex align-items-center gap-lg-3 gap-2 text-white blur bg-white bg-opacity-10 py-2 ps-2 pe-3 pe-lg-5 me-3 me-lg-5 position-relative fs-2 before:content after:content before:position-absolute after:position-absolute before:w-7 before:h-8 after:w-7 after:h-8 before:border-gray after:border-gray before:top-1 before:left-1 before:border-right-none before:border-bottom-none after:bottom-1 after:right-1 after:border-top-none after:borde-left-none before:rounded-6 after:rounded-6"
           href="#"
         >
           <img src="images/favicon.ico" alt="logo" />
           Planto.
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-light-green shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -87,18 +89,22 @@
           <ul class="navbar-nav gap-lg-1 me-auto my-4 my-lg-0 ms-xl-5">
             <li class="nav-item">
               <a
-                class="nav-link active text-white fs-5 rounded px-2"
+                class="nav-link active text-white fs-5 rounded px-2 focus:bg-opacity-white focus:border-light-green focus:blur"
                 aria-current="page"
                 href="#"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-5 rounded px-2" href="#">More</a>
+              <a
+                class="nav-link text-white fs-5 rounded px-2 focus:bg-opacity-white focus:border-light-green focus:blur"
+                href="#"
+                >More</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white fs-5 rounded px-2"
+                class="nav-link dropdown-toggle text-white fs-5 rounded px-2 focus:bg-opacity-white focus:border-light-green focus:blur"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -106,23 +112,37 @@
               >
                 Plants Type
               </a>
-              <ul class="dropdown-menu custom-menu bg-black bg-opacity-10">
+              <ul
+                class="dropdown-menu sm-light-box-shadow bg-black bg-opacity-10 blur"
+              >
                 <li>
-                  <a class="dropdown-item text-white fs-5" href="#"
+                  <a
+                    class="dropdown-item text-white fs-5 hover:bg-light-yellow"
+                    href="#"
                     >Flowering plants</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white fs-5" href="#">Monocots</a>
+                  <a
+                    class="dropdown-item text-white fs-5 hover:bg-light-yellow"
+                    href="#"
+                    >Monocots</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item text-white fs-5" href="#">Trees</a>
+                  <a
+                    class="dropdown-item text-white fs-5 hover:bg-light-yellow"
+                    href="#"
+                    >Trees</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-5 rounded px-2" href="#"
+              <a
+                class="nav-link text-white fs-5 rounded px-2 focus:bg-opacity-white focus:border-light-green focus:blur"
+                href="#"
                 >Contact</a
               >
             </li>
@@ -135,7 +155,7 @@
               aria-label="Search"
             />
             <button
-              class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-3 text-white fs-6"
+              class="hover:bg-light-yellow sm-light-box-shadow bg-white bg-opacity-10 border-0 rounded px-3 text-white fs-6"
               type="submit"
             >
               Search
@@ -143,9 +163,9 @@
           </form>
           <button
             type="button"
-            class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-4 py-2 text-white fs-6"
+            class="hover:bg-light-yellow sm-light-box-shadow bg-white bg-opacity-10 border-0 rounded px-4 py-2 text-white fs-6"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#loginModal"
           >
             login
           </button>
@@ -154,20 +174,22 @@
     </nav>
     <div
       class="modal fade"
-      id="exampleModal"
+      id="loginModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content custom-menu bg-white bg-opacity-10">
+        <div
+          class="modal-content blur sm-light-box-shadow bg-white bg-opacity-10"
+        >
           <div class="modal-header border-0">
             <h1 class="modal-title fs-2 text-white" id="exampleModalLabel">
               log in
             </h1>
             <button
               type="button"
-              class="btn-close bg-white"
+              class="btn-close bg-light-green hover:bg-light-yellow shadow-none sm-darck-box-shadow opacity-100"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
@@ -209,7 +231,7 @@
           <div class="modal-footer border-0">
             <button
               type="button"
-              class="custom-menu custom-button bg-white bg-opacity-10 border-0 rounded px-4 py-2 text-white fs-5 w-100"
+              class="sm-darck-box-shadow hover:bg-light-yellow bg-light-green border-0 rounded px-4 py-2 text-white fs-5 w-100"
               data-bs-dismiss="modal"
             >
               log in
@@ -261,7 +283,7 @@
             alt="image"
           />
           <div
-            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4"
+            class="carousel-caption d-none d-md-block sm-darck-box-shadow bg-black bg-opacity-10 text-black mb-5 p-4"
           >
             <h5 class="fs-3 font-Playfair fw-bold">Haworthia</h5>
             <p class="fs-5 fw-semibold text-capitalize">
@@ -269,7 +291,7 @@
               Southern Africa.
             </p>
             <button
-              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+              class="hover:bg-light-yellow sm-darck-box-shadow border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
             >
               Call Us
             </button>
@@ -282,7 +304,7 @@
             alt="image"
           />
           <div
-            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4"
+            class="carousel-caption d-none d-md-block sm-darck-box-shadow bg-black bg-opacity-10 text-black mb-5 p-4"
           >
             <h5 class="fs-3 font-Playfair fw-bold">Echeveria elegans</h5>
             <p class="fs-5 fw-semibold text-capitalize">
@@ -290,7 +312,7 @@
               to semi-desert habitats in Mexico.
             </p>
             <button
-              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+              class="hover:bg-light-yellow sm-darck-box-shadow border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
             >
               Call Us
             </button>
@@ -303,7 +325,7 @@
             alt="img"
           />
           <div
-            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-black mb-5 p-4 rounded"
+            class="carousel-caption d-none d-md-block sm-darck-box-shadow bg-black bg-opacity-10 text-black mb-5 p-4 rounded"
           >
             <h5 class="fs-3 font-Playfair fw-bold">Sansevieria</h5>
             <p class="fs-5 fw-semibold text-capitalize">
@@ -311,7 +333,7 @@
               plants, native to Africa, notably Madagascar, and southern Asia.
             </p>
             <button
-              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+              class="hover:bg-light-yellow sm-darck-box-shadow border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
             >
               Call Us
             </button>
@@ -324,16 +346,15 @@
             alt="img"
           />
           <div
-            class="carousel-caption d-none d-md-block custom-menu bg-black bg-opacity-10 text-white mb-5 p-4 rounded"
+            class="carousel-caption d-none d-md-block sm-darck-box-shadow bg-black bg-opacity-10 text-white mb-5 p-4 rounded"
           >
-            <h5 class="fs-3 font-Playfair fw-bold">Echeveria</h5>
-            <p class="fs-5 text-capitalize fw-semibold">
-              Echeveria is a large genus of flowering plants in the family
-              Crassulaceae, native to semi-desert areas of Central America,
-              Mexico and northwestern South America.
+            <h5 class="fs-3 font-Playfair fw-bold">Sansevieria</h5>
+            <p class="fs-5 fw-semibold text-capitalize">
+              Sansevieria is a historically recognized genus of flowering
+              plants, native to Africa, notably Madagascar, and southern Asia.
             </p>
             <button
-              class="custom-menu custom-button border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
+              class="hover:bg-light-yellow sm-darck-box-shadow border-0 rounded px-5 py-2 fs-5 bg-light-green text-white"
             >
               Call Us
             </button>
@@ -347,7 +368,7 @@
         data-bs-slide="prev"
       >
         <span
-          class="carousel-control-prev-icon bg-light-green p-lg-4 rounded"
+          class="carousel-control-prev-icon bg-light-green p-lg-4 rounded sm-darck-box-shadow"
           aria-hidden="true"
         ></span>
         <span class="visually-hidden">Previous</span>
@@ -359,13 +380,473 @@
         data-bs-slide="next"
       >
         <span
-          class="carousel-control-next-icon bg-light-green p-lg-4 rounded"
+          class="carousel-control-next-icon bg-light-green p-lg-4 rounded sm-darck-box-shadow"
           aria-hidden="true"
         ></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <!-- carousel end -->
+
+    <!-- start welconm and translate section -->
+    <section class="welcom text-white py-5">
+      <div class="container px-3">
+        <div class="welcom-content">
+          <h1 class="fs-1 font-Playfair fw-bold mb-3 text-light-gray">
+            Breath Natureal
+          </h1>
+          <p class="fs-5 max-w-lg-50 text-capitalize">
+            Bring nature closer to home with our handpicked collection of
+            vibrant, healthy plants.
+          </p>
+          <button
+            class="hover:bg-light-yellow sm-light-box-shadow bg-white bg-opacity-10 border-0 rounded px-3 text-white fs-6 py-2 px-3"
+          >
+            Learn More
+          </button>
+        </div>
+        <!-- ============= -->
+        <div
+          class="best-seller my-5 px-3 py-5 blur bg-white bg-opacity-10 position-relative rounded-5 sm-light-box-shadow"
+        >
+          <div class="header d-flex align-items-center justify-content-between">
+            <h2 class="mb-4 fs-3 text-capitalize">Our Best Seller</h2>
+            <img
+              class="w-227 -mt-170 d-none d-sm-block"
+              src="images/best-seller.png"
+              alt="plant"
+            />
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item bg-transparent border-0 mb-5">
+              <h2 class="accordion-header !bg-danger">
+                <button
+                  class="accordion-button collapsed fs-5 Roboto text-capitalize bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Cactus
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-capitalize text-white">
+                  Cactus plants are a fascinating and distinct category of
+                  succulents recognised for their stunning look, water-storing
+                  ability, and arid-resistance. These plants, which belong to
+                  the Cactaceae family, have evolved to live in some of the
+                  world's most difficult conditions, ranging from scorching
+                  deserts to rocky, arid places.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-0 mb-5">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fs-5 Roboto text-capitalize bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Aglaonema
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-capitalize text-white">
+                  Featuring green leaves variegated with yellow or white, this
+                  popular houseplant is known for its distinctive and tolerant
+                  low light requirements.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fs-5 Roboto text-capitalize bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Monstera
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body text-capitalize text-white">
+                  It is a popular tropical plant known for its large, glossy
+                  leaves with distinctive slits that give it a unique
+                  appearance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============= -->
+        <div class="translate d-flex flex-column gap-5">
+          <div
+            class="translate-item blur bg-white bg-opacity-10 position-relative rounded-5 sm-light-box-shadow p-3"
+          >
+            <h2 class="fs-3 text-capitalize text-center my-3">
+              translat from arabic to english
+            </h2>
+            <p class="fs-5 text-capitalize">
+              write and translate
+              <span class="text-gold">press here</span>
+            </p>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#translateModel"
+              class="text-capitalize m-3 ms-5 px-3 py-1 border-0 hover:bg-light-yellow sm-light-box-shadow bg-plant-green rounded px-3 text-white fs-6"
+            >
+              Copy
+            </button>
+            <div class="form-floating">
+              <textarea
+                class="form-control shadow-none P-5 my-3"
+                placeholder="Translate"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Translate</label>
+            </div>
+          </div>
+          <div
+            class="translate-item blur bg-white bg-opacity-10 position-relative rounded-5 sm-light-box-shadow p-3"
+          >
+            <h2 class="fs-3 text-capitalize text-center my-3">
+              translate from arabic to frensh
+            </h2>
+            <p class="fs-5 text-capitalize">
+              write and translate
+              <span class="text-gold">press here</span>
+            </p>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#translateModel"
+              class="text-capitalize m-3 ms-5 px-3 py-1 border-0 hover:bg-light-yellow sm-light-box-shadow bg-plant-green rounded px-3 text-white fs-6"
+            >
+              Copy
+            </button>
+            <div class="form-floating">
+              <textarea
+                class="form-control shadow-none P-5 my-3"
+                placeholder="Translate"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Translate</label>
+            </div>
+          </div>
+          <div
+            class="translate-item blur bg-white bg-opacity-10 position-relative rounded-5 sm-light-box-shadow p-3"
+          >
+            <h2 class="fs-3 text-capitalize text-center my-3">
+              translat from arabic to german
+            </h2>
+            <p class="fs-5 text-capitalize">
+              write and translate
+              <span class="text-gold">press here</span>
+            </p>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#translateModel"
+              class="text-capitalize m-3 ms-5 px-3 py-1 border-0 hover:bg-light-yellow sm-light-box-shadow bg-plant-green rounded px-3 text-white fs-6"
+            >
+              Copy
+            </button>
+            <div class="form-floating">
+              <textarea
+                class="form-control shadow-none P-5 my-3"
+                placeholder="Translate"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Translate</label>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="translateModel"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div
+              class="modal-content blur sm-light-box-shadow bg-white bg-opacity-10"
+            >
+              <div class="modal-header border-0">
+                <h1
+                  class="modal-title fs-1 text-white font-Clicker"
+                  id="exampleModalLabel"
+                >
+                  Planto Shop
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close bg-light-green hover:bg-light-yellow shadow-none sm-darck-box-shadow opacity-100"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-white fs-4">the message copied</div>
+              <div class="modal-footer border-0">
+                <button
+                  type="button"
+                  class="sm-darck-box-shadow hover:bg-light-yellow bg-light-green border-0 rounded px-4 py-2 text-white fs-5 w-100"
+                  data-bs-dismiss="modal"
+                >
+                  ok
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end welconm and translate section  -->
+    <!-- start empty section -->
+    <section class="empty-section w-100 h-500"></section>
+    <!-- end empty section  -->
+    <!-- start trendy section -->
+    <section class="trendy-section py-5 container">
+      <h2
+        class="position-relative text-white p-3 text-center w-fit m-auto before:content after:content before:position-absolute after:position-absolute before:w-1 before:h-5 after:w-1 after:h-5 before:border-gold after:border-gold before:top-12 before:left-3 before:border-right-none before:border-bottom-none after:bottom-4 after:-right-3 after:border-top-none after:borde-left-none before:rounded-6 after:rounded-6"
+      >
+        Our Trendy plants
+      </h2>
+      <div class="row mt-70 justify-content-center">
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant6.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant4.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant5.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant1.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant2.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 mb-170 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant3.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant2.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center"
+        >
+          <div
+            class="card max-w-90 position-relative bg-white bg-opacity-10 text-white blur rounded-4 sm-light-box-shadow"
+          >
+            <img class="-mt-90 z-3" src="images/plant3.png" alt="plant" />
+            <div class="card-body -mt-50 z-3">
+              <h5 class="card-title font-Playfair fs-4 fw-bold mb-4">
+                Gasteraloe
+              </h5>
+              <div class="w-100 text-end">
+                <a
+                  href="#"
+                  class="text-decoration-none py-2 px-5 bg-white bg-opacity-10 hover:bg-light-yellow sm-light-box-shadow font-Playfair fs-5 rounded text-white"
+                  >show</a
+                >
+              </div>
+              <p class="card-text my-4">
+                Aloe Vera are an excellent low maintenance addition to any plant
+                keepers collection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end trendy section -->
+    <!-- start empty section -->
+    <section class="empty-section2 w-100 h-500"></section>
+    <!-- end empty section  -->
+    <!-- start Customer Review  -->
+    <section class="Review"></section>
+    <!-- end Customer Review  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

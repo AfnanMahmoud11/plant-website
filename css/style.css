@@ -1,42 +1,69 @@
-body {
-  background-color: #1a2217;
-  font-family: "Playfair Display", serif;
-}
-.navbar {
-  background-color: #1a2217;
-}
-.navbar-brand {
-  font-family: "Clicker Script", cursive;
-}
-.glass-card {
-  backdrop-filter: blur(15px);
-  box-shadow: 3px 5px 5px rgb(174 205 164 / 30%);
-  text-shadow: 2px 2px 4px rgb(255 255 255);
-}
-.navbar-toggler {
-  background-color: #a1ae93;
-}
-.nav-link:focus {
-  border: 1px solid #a1ae93;
-  background-color: #ffffff1f;
-  backdrop-filter: blur(15px);
-}
-.custom-menu {
-  backdrop-filter: blur(15px);
-  box-shadow: 3px 5px 5px rgb(174 205 164 / 30%);
-}
-.custom-menu a:hover {
-  background-color: #a79118;
-}
-.custom-button:hover {
-  background-color: #a79118 !important;
-}
-@media (min-width: 991px) {
-  .h-lg-screen {
-    height: 100vh;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar-toggler-icon {
+  background-image: url(../images/menu.png);
+}
+.welcom {
+  background-image: url(../images/welcom-cover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.accordion-flush .accordion-item .accordion-button {
+  box-shadow: 2px 2px 3px rgb(195 189 189 / 30%);
+}
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/down-arrow\ 4.png);
+}
+.btn-close,
+.btn-close:hover {
+  background-image: url(../images/cross.png);
+}
+.empty-section,
+.empty-section2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.empty-section {
+  background-image: url(../images/empty-sec.jpg);
+  background-position: bottom;
+}
+.empty-section2 {
+  background-image: url(../images/empty-sec-2.jpg);
+  background-position: top;
+}
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #bba24f0c;
+  border-radius: 16px;
+  transition: all 0.4s ease-in-out;
+}
+.card::before {
+  top: 0;
+  left: 0;
+}
+.card::after {
+  bottom: 0;
+  right: 0;
+}
+.card:hover::before,
+.card:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.Review {
+  height: 1500px;
+}
 /* custom classes */
 /* ********< before and after >************* */
 /* content */
@@ -56,22 +83,30 @@ body {
 .after\:w-7::after {
   width: 70%;
 }
-.before\:w-7::before,
-.after\:w-7::after {
-  width: 70%;
+.before\:w-1::before,
+.after\:w-1::after {
+  width: 15%;
 }
 
 /* ==================== */
 /* height */
-.before\:h-10::before,
-.after\:h-10::after {
-  height: 100%;
+.before\:h-8::before,
+.after\:h-8::after {
+  height: 80%;
+}
+.before\:h-5::before,
+.after\:h-5::after {
+  height: 50%;
 }
 /* ===================== */
 /* border */
 .before\:border-gray::before,
 .after\:border-gray::after {
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.before\:border-gold::before,
+.after\:border-gold::after {
+  border: 3px solid #bba14f;
 }
 .before\:border-right-none::before {
   border-right: none;
@@ -87,24 +122,41 @@ body {
 }
 /* ============================= */
 /* positions */
-.before\:-top-1::before {
-  top: -1px;
+.before\:top-1::before {
+  top: 1px;
 }
-.before\:-left-1::before {
-  left: -1px;
+.before\:top-12::before {
+  top: 12px;
 }
-.after\:-right-1::after {
-  right: -1px;
+
+.before\:left-1::before {
+  left: 1px;
 }
-.after\:-bottom-1::after {
-  bottom: -1px;
+.before\:left-3::before {
+  left: 3px;
+}
+.after\:right-1::after {
+  right: 1px;
+}
+.after\:-right-3::after {
+  right: -3px;
+}
+.after\:bottom-1::after {
+  bottom: 1px;
+}
+.after\:bottom-4::after {
+  bottom: 4px;
 }
 .top-200 {
   top: 200px;
 }
+.-top-150 {
+  top: -150px;
+}
 .end-20 {
   right: 20px;
 }
+
 /* ================================= */
 /* rounded */
 .before\:rounded-6::before {
@@ -113,14 +165,37 @@ body {
 .after\:rounded-6::after {
   border-bottom-right-radius: 6px;
 }
+.before\:rounded-32::before {
+  border-top-left-radius: 32px;
+}
+.after\:rounded-32::after {
+  border-bottom-right-radius: 32px;
+}
+
 /* ********< hover >************* */
 .hover\:text-light-green:hover {
   color: #5c694f;
+}
+.hover\:bg-light-yellow:hover {
+  background-color: #a79118 !important;
+}
+/* ********< focus >************* */
+.focus\:border-light-green:focus {
+  border: 1px solid #a1ae93;
+}
+.focus\:bg-opacity-white:focus {
+  background-color: #ffffff1f;
+}
+.focus\:blur:focus {
+  backdrop-filter: blur(15px);
 }
 /* ********< colors >************* */
 /* background */
 .bg-light-green {
   background-color: #a1ae93;
+}
+.bg-plant-green {
+  background-color: #76974d;
 }
 .bg-darck-green {
   background-color: #1a2217;
@@ -130,7 +205,88 @@ body {
 .text-light-gold {
   color: #a79118;
 }
+.text-gold {
+  color: #dbc544;
+}
+.text-light-gray {
+  color: #dbdbdb;
+}
 /* ********< fonts >************* */
 .font-Playfair {
   font-family: "Playfair Display SC", serif;
+}
+.font-Playfair2 {
+  font-family: "Playfair Display", serif;
+}
+.font-Clicker {
+  font-family: "Clicker Script", cursive;
+}
+.font-Roboto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* ********< sizing >************* */
+@media (min-width: 991px) {
+  .max-w-lg-50 {
+    max-width: 50%;
+  }
+  .h-lg-screen {
+    height: 100vh;
+  }
+}
+.w-227 {
+  width: 227px;
+}
+.max-w-60 {
+  max-width: 60%;
+}
+.max-w-90 {
+  max-width: 90%;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-500 {
+  height: 500px;
+}
+/* ********< spacing >************* */
+.-mt-170 {
+  margin-top: -170px;
+}
+.-mt-50 {
+  margin-top: -50px;
+}
+.-mt-90 {
+  margin-top: -90px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mb-170 {
+  margin-bottom: 170px;
+}
+
+/* ********< shadoow >************* */
+.sm-light-box-shadow {
+  box-shadow: 3px 5px 5px rgb(174 205 164 / 30%);
+}
+.sm-gray-box-shadow {
+  box-shadow: 2px 2px 3px rgb(195 189 189 / 30%);
+}
+.sm-darck-box-shadow {
+  box-shadow: 3px 5px 5px rgba(2, 2, 2, 0.3);
+}
+.sm-light-text-shadow {
+  text-shadow: 2px 2px 4px rgb(255 255 255);
+}
+/* ********< border>************* */
+.border-light-green {
+  border: 1px solid #a1ae93;
+}
+.rounded-40 {
+  border-radius: 40px;
+}
+/* ********< blur>************* */
+.blur {
+  backdrop-filter: blur(15px);
 }
