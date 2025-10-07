@@ -273,13 +273,17 @@
 .font-Playfair2 {
   font-family: "Playfair Display", serif;
 }
-.font-Clicker {
-  font-family: "Clicker Script", cursive;
+.font-Pacifico {
+  font-family: "Pacifico", cursive;
 }
 .font-Roboto {
   font-family: "Roboto Condensed", sans-serif;
 }
-
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
 /* ********< sizing >************* */
 @media (min-width: 991px) {
   .max-w-lg-50 {
@@ -312,6 +316,14 @@
 }
 .h-400 {
   height: 400px;
+}
+@media (min-width: 768px) {
+  .c-w-75 {
+    width: 75% !important;
+  }
+  .max-w-md-90 {
+    max-width: 90%;
+  }
 }
 /* ********< spacing >************* */
 .-mt-170 {
@@ -361,6 +373,9 @@
 /* ********< blur>************* */
 .blur {
   backdrop-filter: blur(15px);
+}
+.light-blur {
+  backdrop-filter: blur(3px);
 }
 /* ********< trunsition>************* */
 .transition-all {
